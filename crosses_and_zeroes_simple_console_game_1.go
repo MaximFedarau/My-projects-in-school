@@ -98,7 +98,7 @@ func main() {
       fmt.Println("O-player won!!!")
       break
     }
-    var val_counter = 0// if x-player and 0-player both didn't won
+    var val_counter = 0// if x-player and 0-player both didn't win
     for {// cycle need to get our field in real time
       if j==3 {
         j=0
