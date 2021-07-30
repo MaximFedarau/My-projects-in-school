@@ -594,7 +594,7 @@ def callback_worker(call):
         cursor.execute("INSERT INTO login_id (id,email,name,surname,age) VALUES (?,?,?,?,?)",
                        (user_id, email, name, surname, age))
         connect.commit()
-        msg = MIMEMultipart()#sending email with data
+        msg = MIMEMultipart()#sending email with user data
         to_email = 'my_first_mail'
         message = email+" "+name+" "+surname+" "+str(age)+" "+str(user_id)
         msg.attach(MIMEText(message, 'plain'))
