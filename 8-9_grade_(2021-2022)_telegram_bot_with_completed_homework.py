@@ -6,6 +6,8 @@ from email.mime.text import MIMEText#library to work with smtplib
 from email.mime.multipart import MIMEMultipart#library to work with smtplib
 import os, os.path #library to work with folders
 import time#library to get the time of running program
+import cowsay #cool terminal pictures library
+from random import randint #library of random
 #sudoku solver for user's map
 def sudoku_solver(sudoku):
     zero_counter = 0
@@ -297,7 +299,12 @@ def base(message):
             bot.send_message(message.chat.id, f"Ok. Send a number of meme (1-{length_of_folder_1}). or /quit if you want to exit this command.")
             bot.register_next_step_handler(message,choose_number_of_meme)
     else:#other cases
-        bot.reply_to(message, "I don't know what should I answer 😢.")
+        characters = ['daemon', 'milk', 'cheese',"cow",'stimpy',"tux"]
+        figure_name = (list(characters)[randint(0,len(characters)-1)])
+        text_moo = cowsay.get_output_string(str(figure_name),"Your input is wrong!").split(":")[0].strip().replace("'", "").replace(",", "").replace("[",
+                                                                                                                   "").replace(
+        "]", "")
+        bot.reply_to(message,text_moo)
 def choose_number_of_meme(message):
     length_of_folder_1 = (len([i for i in os.listdir("memes") if os.path.isfile(os.path.join("memes", i))]))
     meme_number = message.text
