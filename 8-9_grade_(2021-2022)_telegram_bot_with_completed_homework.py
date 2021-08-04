@@ -616,4 +616,4 @@ def callback_worker(call):
         bot.send_message(call.from_user.id, "Hi! What is your email?")
         bot.register_next_step_handler(call.message, reg_email)
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Ok.",reply_markup=None)
-bot.infinity_polling(True)
+bot.infinity_polling(True)#сейчас поставил bot.polling(none_stop=True), иначе выдает ошибку
