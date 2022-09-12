@@ -1,2 +1,3 @@
-# My-projects-in-school
-This project contains my projects, which I made in school plus mini guides and hints to each action there.
+### This repo contains:
+- My early (beginner level) projects, which I made in middle school + mini guides and hints to each action there.
+- Lectures + lessons materials (conspects, presentations, videos and etc.).
