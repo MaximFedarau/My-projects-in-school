@@ -1,3 +1,4 @@
-### This repo contains:
-- My early (beginner level) projects, which I made in middle school + mini guides and hints to each action there.
-- Lectures + lessons materials (conspects, keynotes, videos and etc.).
+<h1 align="center">What is there?🧐</h1>
+
+- My earliest (beginner level) projects, that I did in high school + there are mini-guides for each of them.
+- Lectures + lesson materials (notes, keynotes, videos and etc.).
